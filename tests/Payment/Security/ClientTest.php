@@ -24,17 +24,7 @@ class ClientTest extends TestCase
      *
      * @return \EasyWeChat\Payment\Application
      */
-    private function makeApp($config = [])
-    {
-        return new Application(array_merge([
-            'app_id' => 'wx123456',
-            'mch_id' => 'foo-mcherant-id',
-            'key' => 'foo-mcherant-key',
-            'sub_appid' => 'foo-sub-appid',
-            'sub_mch_id' => 'foo-sub-mch-id',
-            'rsa_public_key_path' => \STUBS_ROOT.'/files/public-wx123456.pem',
-        ], $config));
-    }
+    
 
     public function testGetPublicKey()
     {

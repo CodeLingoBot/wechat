@@ -20,14 +20,7 @@ use Symfony\Component\HttpFoundation\Response;
 
 class ScannedTest extends TestCase
 {
-    private function makeApp($config = [])
-    {
-        return new Application(array_merge([
-            'app_id' => 'mock-app-id',
-            'mch_id' => 'mock-mch-id',
-            'key' => '88888888888888888888888888888888',
-        ], $config));
-    }
+    
 
     public function testScannedNotify()
     {

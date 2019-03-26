@@ -47,16 +47,5 @@ class ServiceProvider implements ServiceProviderInterface
      *
      * @return string
      */
-    private function prepareCallbackUrl($app)
-    {
-        $callback = $app['config']->get('oauth.callback');
-
-        if (0 === stripos($callback, 'http')) {
-            return $callback;
-        }
-
-        $baseUrl = $app['request']->getSchemeAndHttpHost();
-
-        return $baseUrl.'/'.ltrim($callback, '/');
-    }
+    
 }

@@ -20,12 +20,7 @@ use Symfony\Component\HttpFoundation\Response;
 
 class RefundedTest extends TestCase
 {
-    private function makeApp($config = [])
-    {
-        return new Application(array_merge([
-            'key' => 'foo-merchant-key',
-        ], $config));
-    }
+    
 
     public function testRefundedNotify()
     {

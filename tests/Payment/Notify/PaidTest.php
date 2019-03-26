@@ -21,12 +21,7 @@ use Symfony\Component\HttpFoundation\Response;
 
 class PaidTest extends TestCase
 {
-    private function makeApp($config = [])
-    {
-        return new Application(array_merge([
-            'key' => '88888888888888888888888888888888',
-        ], $config));
-    }
+    
 
     public function testPaidNotify()
     {

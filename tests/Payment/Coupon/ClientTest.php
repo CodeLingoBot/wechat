@@ -17,16 +17,7 @@ use EasyWeChat\Tests\TestCase;
 
 class ClientTest extends TestCase
 {
-    private function makeApp($config = [])
-    {
-        return new Application(array_merge([
-            'app_id' => 'wx123456',
-            'mch_id' => 'foo-mcherant-id',
-            'key' => 'foo-mcherant-key',
-            'sub_appid' => 'foo-sub-appid',
-            'sub_mch_id' => 'foo-sub-mch-id',
-        ], $config));
-    }
+    
 
     public function testSend()
     {
